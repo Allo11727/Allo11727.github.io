@@ -1,0 +1,385 @@
+ /* Estilos generales */
+ body {
+    font-family: 'Poppins', sans-serif; /* Fuente principal moderna */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina relleno por defecto */
+    background: linear-gradient(to right, #ffffff, #ffffff); /* Fondo degradado */
+    color: #333; /* Color del texto en tono oscuro */
+    text-align: center; /* Alineación del texto */
+    padding-top: 80px; /* Ajusta el espacio para que el contenido no se superponga */
+
+}
+
+/* Estilos para el encabezado */
+header {
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Asegura que esté pegado al borde superior */
+    left: 0; /* Lo alinea al borde izquierdo */
+    width: 99%; /* Hace que ocupe todo el ancho de la pantalla */
+    background-color: #7ab8f7; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Activa flexbox */
+    justify-content: space-between; /* Separa los elementos dentro del header */
+    align-items: center; /* Alinea los elementos verticalmente */
+    z-index: 1000; /* Asegura que siempre quede por encima de otros elementos */
+}
+
+/* Contenedor del logo */
+.logo {
+    font-size: 60px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Hace el texto más grueso */
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+/* Estilos para la navegación */
+nav ul {
+    list-style: none; /* Elimina los estilos de lista */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
+    display: flex; /* Usa flexbox para los elementos del menú */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre elementos del menú */
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0); /* Texto en blanco */
+    text-decoration: none; /* Elimina subrayado */
+    font-weight: 600; /* Hace el texto más grueso */
+    font-size: 18px; /* Ajusta el tamaño de fuente */
+}
+
+nav ul li a:hover {
+    color: #cd32c3; /* Cambia a verde al pasar el mouse */
+}
+
+/* Estilos para el contenido principal */
+main {
+    max-width: 800px; /* Define el ancho máximo del contenido */
+    margin: 40px auto; /* Centra el contenido */
+    padding: 20px; /* Espaciado interno */
+    background: white; /* Fondo en color blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra ligera */
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 40px; /* Espaciado entre secciones */
+    padding: 30px; /* Espaciado interno */
+    background-color: #e6f7ff; /* Fondo azul claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+h2 {
+    color: #222; /* Color oscuro para títulos */
+}
+
+/* Estilos para los botones */
+.btn {
+    background-color: #222; /* Fondo oscuro */
+    color: white; /* Texto en blanco */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: 0.3s; /* Transición suave */
+}
+
+.btn:hover {
+    background-color: #555; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el pie de página */
+.footer-contacto{
+    background-color: #002366; /* Fondo oscuro */
+    color: white; /* Texto en blanco */
+    padding: 10px; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+    bottom: 0; /* Pegado al borde inferior */
+    margin: 10px 0; /* Espaciado entre líneas */
+    font-size: 15px; /* Tamaño del texto */
+}
+
+/* Animaciones de desplazamiento */
+.desplazamiento {
+    animation: mover 0.7s ease-in-out forwards; /* Efecto de animación */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #d4edda; /* Fondo verde claro */
+    margin-bottom: 20px; /* Separación entre elementos */
+}
+
+@keyframes mover {
+    from { transform: translateY(20px); opacity: 0; } /* Comienza desde abajo */
+    to { transform: translateY(0); opacity: 1; } /* Se desplaza hacia arriba */
+}
+
+/* ===================== */
+/* Estilos para la Sección de Catálogo */
+/* ===================== */
+
+/* Contenedor general del catálogo */
+#catalogo {
+  background-color: #92929220;      /* Fondo claro */
+  padding: 40px 20px;             /* Espaciado interno */
+  max-width: 1200px;              /* Ancho máximo */
+  margin: 0 auto;                 /* Centrado horizontal */
+}
+
+/* Título general del catálogo */
+#catalogo > h2 {
+  text-align: center;             /* Centra el título */
+  margin-bottom: 30px;            /* Espacio inferior */
+}
+
+/* Cada recuadro de producto */
+.producto {
+  border: 1px solid #ccc;         /* Borde para delimitar el recuadro */
+  margin-bottom: 20px;            /* Separación entre productos */
+  padding: 20px;                  /* Espaciado interno */
+  border-radius: 5px;             /* Bordes redondeados */
+  background-color: #fdfdfd;      /* Fondo claro */
+}
+
+/* Título de cada producto, centrado */
+.producto h2 {
+  text-align: center;             /* Centra el título */
+  margin-bottom: 20px;            /* Espacio inferior */
+}
+
+/* Contenedor para descripción e imagen */
+.contenido-producto {
+  display: flex;                  /* Utiliza Flexbox para alinear elementos */
+  align-items: center;            /* Alinea verticalmente al centro */
+  justify-content: space-between; /* Distribuye espacio entre descripción e imagen */
+}
+
+/* Asegura que la descripción aparezca a la izquierda */
+.info-producto {
+  order: 1;                       /* Prioridad para mostrar a la izquierda */
+  flex: 1;                        /* Ocupa el espacio disponible */
+  margin-right: 20px;             /* Espacio a la derecha para separar de la imagen */
+}
+
+/* Asegura que la imagen aparezca a la derecha */
+.contenido-producto img {
+  order: 2;                       /* Coloca la imagen en el segundo lugar */
+  flex: 0 0 300px;                /* Ancho fijo para la imagen (ajustable) */
+  width: 300px;                   /* Ancho de la imagen */
+  height: auto;                   /* Mantiene la proporción original */
+  border-radius: 5px;             /* Bordes redondeados en la imagen */
+  margin-left: 20px;              /* Espacio a la izquierda de la imagen */
+}
+
+/* Estilos para el anuncio flotante ---------------------------------
+-----------------------------------------------------------------*/
+#contacto-flotante {
+    position: fixed; /* Posición fija en la pantalla */
+    bottom: 450px; /* Separación del borde inferior */
+    right: 10px; /* Separación del borde derecho */
+    background-color: #32cd32; /* Fondo verde */
+    color: white; /* Texto en blanco */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    text-align: left; /* Alineación del texto */
+    font-size: 18px; /* Tamaño del texto */
+}
+
+#contacto-flotante:hover {
+    background-color: #28a745; /* Cambio a verde oscuro al pasar el mouse */
+}
+
+/* ===================== */
+/* Estilos para el Slider */
+/* ===================== */
+
+/* Contenedor principal del slider */
+.slider {
+    height: 650px;          /* Altura fija de 400px para el carrusel */
+    width: 100%;             /* Ancho del carrusel al 80% del contenedor padre */
+    /*max-width:1400px;       /* Ancho máximo de 800px (opcional) */
+    /*margin: auto;           /* Centrado horizontal */
+    overflow: hidden;       /* Oculta contenido desbordado */
+    position: relative;     /* Para posicionar elementos internos (como flechas) */
+      }
+  
+  /* Contenedor de todas las diapositivas */
+  .slides {
+    display: flex; /* Coloca las diapositivas en una fila */
+    transition: transform 0.5s ease-in-out; /* Transición suave entre diapositivas */
+  }
+  
+  /* Cada diapositiva */
+  .slide {
+    min-width: 100%; /* Cada diapositiva ocupa el 100% del contenedor */
+    box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho */
+    display: none; /* Oculta las diapositivas por defecto */
+  }
+  
+  /* Diapositiva activa */
+  .slide.active {
+    display: block; /* Muestra solo la diapositiva con clase "active" */
+  }
+  
+  /* Estilo para la imagen dentro de cada diapositiva */
+  .slide img {
+    width: 100%;            /* La imagen ocupará el ancho completo del contenedor */
+    height: 100%;           /* La imagen se ajustará a la altura del contenedor */
+    object-fit: cover;      /* Cubre el contenedor sin distorsionar la imagen */
+  }
+  
+  /* Controles de navegación (flechas) */
+  .navigation .prev,
+  .navigation .next {
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+    position: absolute; /* Posiciona las flechas de forma absoluta */
+    top: 50%; /* Centra verticalmente las flechas */
+    transform: translateY(-50%); /* Ajusta para centrar exactamente */
+    font-size: 2rem; /* Tamaño de la fuente de las flechas */
+    color: #ffffff; /* Color blanco para las flechas */
+    padding: 0.5rem; /* Espaciado interno */
+    border-radius: 50%; /* Bordes redondeados */
+  }
+  
+  /* Posición de la flecha izquierda */
+  .navigation .prev {
+    left: 10px; /* Ubicada a 10px del borde izquierdo */
+  }
+  
+  /* Posición de la flecha derecha */
+  .navigation .next {
+    right: 10px; /* Ubicada a 10px del borde derecho */
+  }
+  
+  /* Contenedor para los indicadores (puntos) */
+  .dots {
+    text-align: center; /* Centra los puntos horizontalmente */
+    position: absolute; /* Posiciona el contenedor de puntos de forma absoluta */
+    bottom: 15px; /* Ubica el contenedor a 15px del fondo */
+    width: 100%; /* Ocupa el ancho completo del slider */
+  }
+  
+  /* Cada punto indicador */
+  .dot {
+    display: inline-block; /* Muestra los puntos en línea */
+    height: 15px; /* Altura del punto */
+    width: 15px; /* Ancho del punto */
+    margin: 0 5px; /* Espaciado horizontal entre puntos */
+    background-color: rgba(255, 255, 255, 0.5); /* Color semitransparente */
+    border-radius: 50%; /* Forma circular */
+    cursor: pointer; /* Indica que el punto es clicable */
+  }
+  
+  /* Punto activo */
+  .dot.active {
+    background-color: #fff; /* Color blanco para el punto activo */
+  }
+ 
+/* ---------------------------------------------------*/
+ /* Contenedor de todas las secciones de servicios en INDEX PRINCIPAL*/
+ .services {
+  background-color: #f7f7f700;
+  display: flex;              /* Utiliza Flexbox para organizar las secciones */
+  flex-wrap: wrap;            /* Permite que las secciones se acomoden en varias filas */
+  justify-content: space-between; /* Distribuye el espacio entre las secciones */
+  max-width: 2000px;          /* Ancho máximo del contenedor */
+  margin: 20px auto;          /* Centra el contenedor y agrega margen superior/inferior */
+  padding: 20px;              /* Espaciado interno */
+}
+
+/* Estilos para cada sección individual */
+.service {
+  flex: 1 1 45%;              /* Cada sección ocupa aproximadamente el 45% del ancho, permitiendo dos por fila */
+  background-color: #f7f7f7;    /* Color de fondo claro para diferenciar la sección */
+  margin: 10px;               /* Espaciado externo entre secciones */
+  padding: 20px;              /* Espaciado interno dentro de cada sección */
+  border-radius: 5px;         /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+/* Estilo para los títulos de cada sección */
+.service h2 {
+  margin-top: 0;              /* Elimina el margen superior para un mejor alineado */
+  color: #333;                /* Color del texto del título */
+}
+
+/* Estilo para los párrafos de cada sección */
+.service p {
+  font-size: 1rem;            /* Tamaño de fuente legible */
+  line-height: 1.5;           /* Altura de línea para mejorar la lectura */
+  color: #666;                /* Color de texto gris suave */
+}
+/* ===================== */
+/* Sección About         */
+/* ===================== */
+.about {
+  padding: 50px 20px; /* Espaciado interno de la sección */
+  background-color: #f9f9f9; /* Fondo claro */
+}
+.about .container {
+  display: flex; /* Organiza en columnas */
+  flex-wrap: wrap; /* Permite varias filas si es necesario */
+  justify-content: space-between; /* Distribuye el espacio */
+  align-items: center; /* Alinea verticalmente */
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+}
+.about-text {
+  flex: 1 1 50%; /* Ocupa la mitad del contenedor */
+  padding: 20px; /* Espaciado interno */
+}
+.about-text h2 {
+  font-size: 2rem; /* Tamaño del título */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+.about-text p {
+  line-height: 1.6; /* Altura de línea para facilitar lectura */
+}
+.about-image {
+  flex: 1 1 40%; /* Ocupa un poco menos de la mitad */
+  padding: 20px; /* Espaciado interno */
+}
+.about-image img {
+  width: 100%; /* Imagen a ancho completo */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* ===================== */
+/* Sección Visión, Misión y Política de Calidad */
+/* ===================== */
+#vision-mision {
+  padding: 50px 20px; /* Espaciado interno */
+  background-color: #fff; /* Fondo blanco */
+}
+.container-values {
+  display: flex; /* Organiza los artículos en fila */
+  flex-wrap: wrap; /* Permite varias filas en dispositivos pequeños */
+  justify-content: space-around; /* Distribuye los artículos */
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrado horizontal */
+}
+.value-item {
+  flex: 1 1 30%; /* Cada artículo ocupa aproximadamente 30% del ancho */
+  background-color: #dadada; /* Fondo blanco */
+  margin: 10px; /* Espaciado externo */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  text-align: center; /* Centra el contenido */
+}
+.value-item h2 {
+  margin-top: 0; /* Sin margen superior */
+  font-size: 1.5rem; /* Tamaño del título */
+  margin-bottom: 15px; /* Espaciado inferior */
+}
+.value-item p {
+  font-size: 1rem; /* Tamaño del texto */
+  line-height: 1.5; /* Altura de línea para facilitar lectura */
+}
