@@ -1,7 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsiva -->
+    <title>Todo Limpio - Inicio</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo CSS principal -->
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <!-- Cabecera principal -->
+    <header>
+        <div class="logo"> Jabbon </div> <!-- Logo de la marca -->
+        <nav> <!-- Menú de navegación -->
+            <ul>
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="nosotros.html">Nosotros</a></li> <!-- Enlace a la página de nosotros -->
+                <li><a href="catalogo.html">Productos y Servicios</a></li> <!-- Enlace al catálogo de productos y servicios -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider de Imágenes (Carrusel) -->
+    <div class="slider"> <!-- Contenedor principal del slider -->
+      <div class="slides"> <!-- Contenedor para todas las diapositivas -->
+        <div class="slide active"> <!-- Diapositiva 1, visible inicialmente -->
+          <img src="imagen1.jpg" alt="Imagen 1 carrusel"> <!-- Imagen de la diapositiva 1 -->
+        </div>
+        <div class="slide"> <!-- Diapositiva 2 -->
+          <img src="imagen2.jpg" alt="Imagen 2 carrusel"> <!-- Imagen de la diapositiva 2 -->
+        </div>
+        <div class="slide"> <!-- Diapositiva 3 -->
+          <img src="imagen3.jpg" alt="Imagen 3 carrusel"> <!-- Imagen de la diapositiva 3 -->
+        </div>
+        <div class="slide"> <!-- Diapositiva 3 -->
+          <img src="imagen4.jpg" alt="Imagen 3 carrusel"> <!-- Imagen de la diapositiva 3 -->
+        </div>
+        <div class="slide"> <!-- Diapositiva 3 -->
+          <img src="imagen5.jpg" alt="Imagen 3 carrusel"> <!-- Imagen de la diapositiva 3 -->
+        </div>
+        <div class="slide"> <!-- Diapositiva 3 -->
+          <img src="imagen6.jpg" alt="Imagen 3 carrusel"> <!-- Imagen de la diapositiva 3 -->
+        </div>
+        <div class="slide"> <!-- Diapositiva 3 -->
+          <img src="imagen7.jpg" alt="Imagen 3 carrusel"> <!-- Imagen de la diapositiva 3 -->
+        </div>
+      </div>
+      <!-- Controles de navegación (flechas) -->
+      <div class="navigation">
+        <span class="prev">&#10094;</span> <!-- Flecha para ir a la diapositiva anterior -->
+        <span class="next">&#10095;</span> <!-- Flecha para ir a la siguiente diapositiva -->
+      </div>
+      <!-- Indicadores (puntos) para cada diapositiva -->
+      <div class="dots">
+        <span class="dot active" data-index="0"></span> <!-- Punto activo para la primera diapositiva -->
+        <span class="dot" data-index="1"></span> <!-- Punto para la segunda diapositiva -->
+        <span class="dot" data-index="2"></span> <!-- Punto para la tercera diapositiva -->
+        <span class="dot" data-index="3"></span> <!-- Punto para la tercera diapositiva -->
+        <span class="dot" data-index="4"></span> <!-- Punto para la tercera diapositiva -->
+        <span class="dot" data-index="5"></span> <!-- Punto para la tercera diapositiva -->
+        <span class="dot" data-index="6"></span> <!-- Punto para la tercera diapositiva -->
+      </div>
+    </div>
+
+    <!-- Sección de productos y servicios -->
+<section class="services">
+  <!-- Sección para Limpieza del Hogar -->
+  <article class="service">
+    <h2>Limpieza del Hogar</h2> <!-- Título de la sección -->
+    <p>Ofrecemos productos y soluciones diseñados para el cuidado y limpieza de tu hogar.</p> <!-- Descripción de la sección -->
+  </article>
+  
+  <!-- Sección para Cuidado Personal -->
+  <article class="service">
+    <h2>Cuidado Personal</h2> <!-- Título de la sección -->
+    <p>Gama de productos de higiene, como geles, shampoos y acondicionadores para tu cuidado diario.</p> <!-- Descripción de la sección -->
+  </article>
+  
+  <!-- Sección para Industria -->
+  <article class="service">
+    <h2>Industria y Laboratorios</h2> <!-- Título de la sección -->
+    <p>Soluciones especializadas para entornos industriales, hospitales y oficinas, incluyendo desengrasantes y sanitizantes.</p> <!-- Descripción de la sección -->
+  </article>
+  
+  <!-- Sección para Hoteles y Restaurantes -->
+  <article class="service">
+    <h2>---</h2> <!-- Título de la sección -->
+    <p>n.</p> <!-- Descripción de la sección -->
+  </article>
+</section>
+
+
+    <!-- Anuncio flotante 
+    <div id="contacto-flotante">
+        <p>📞 <strong>Contacto:</strong> 55-3741-4474</p> !-- Número de contacto 1 --
+        <p>📞 <strong>Contacto:</strong> 55-8195-2133</p> !-- Número de contacto 2 --
+        <p>📧 <strong>Email:</strong> aontreraso2701@gmail.com</p> !-- Correo de contacto --
+    </div>  -->
+
+    <!-- Footer con información de contacto -->
+    <div class="footer-contacto">
+        <p><strong>Dirección:</strong> </p> <!-- Dirección de la empresa -->
+        <p><strong>Teléfono:</strong> 55-3205-4736</p> <!-- Teléfono de contacto -->
+        <p><strong>Teléfono:</strong> 55-8195-2133</p> <!-- Teléfono de contacto -->
+        <p><strong>Teléfono:</strong> 55-3741-4474</p> <!-- Teléfono de contacto -->
+        <p><strong>Email:</strong> contacto@minegocio.com</p> <!-- Correo electrónico -->
+    </div>
+
+    <script src="script.js"></script> <!-- Vincula el archivo JavaScript para el slider -->
 </body>
 </html>
