@@ -284,38 +284,51 @@ h2 {
  
 /* ---------------------------------------------------*/
  /* Contenedor de todas las secciones de servicios en INDEX PRINCIPAL*/
- .services {
-  background-color: #f7f7f700;
-  display: flex;              /* Utiliza Flexbox para organizar las secciones */
-  flex-wrap: wrap;            /* Permite que las secciones se acomoden en varias filas */
-  justify-content: space-between; /* Distribuye el espacio entre las secciones */
-  max-width: 2000px;          /* Ancho máximo del contenedor */
-  margin: 20px auto;          /* Centra el contenedor y agrega margen superior/inferior */
-  padding: 20px;              /* Espaciado interno */
-}
+/* Inicio del selector para el contenedor principal de servicios */
+.services {                                    /* Selecciona el contenedor de todas las secciones de servicios */
+  display: flex;                             /* Activa Flexbox para organizar los elementos en línea */
+  flex-wrap: wrap;                           /* Permite que los elementos se envuelvan a la siguiente línea */
+}                                             /* Fin del selector .services */
 
-/* Estilos para cada sección individual */
-.service {
-  flex: 1 1 45%;              /* Cada sección ocupa aproximadamente el 45% del ancho, permitiendo dos por fila */
-  background-color: #f7f7f7;    /* Color de fondo claro para diferenciar la sección */
-  margin: 10px;               /* Espaciado externo entre secciones */
-  padding: 20px;              /* Espaciado interno dentro de cada sección */
-  border-radius: 5px;         /* Bordes redondeados */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
-}
+/* Inicio del selector para cada artículo de servicio */
+.service {                                     /* Selecciona cada artículo que representa un servicio */
+  display: flex;                             /* Utiliza Flexbox para alinear la imagen y el contenido en línea */
+  align-items:center;                       /* Alinea verticalmente los elementos al centro */
+  flex: 1 1 calc(25% - 20px);             /* Define un ancho base para lograr 3 columnas (ajustado con márgenes) */
+  background-color: #f7f7f7;                   /* Aplica un color de fondo claro a cada sección */
+  margin: 10px;                              /* Establece un margen externo para separar las secciones */
+  padding: 20px;                             /* Aplica un espacio interno entre el contenido y el borde */
+  border-radius: 5px;                        /* Redondea los bordes de cada sección */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);    /* Añade una sombra sutil para dar un efecto de profundidad */
+}                                             /* Fin del selector .service */
 
-/* Estilo para los títulos de cada sección */
-.service h2 {
-  margin-top: 0;              /* Elimina el margen superior para un mejor alineado */
-  color: #333;                /* Color del texto del título */
-}
+/* Selector para centrar la séptima sección en la última fila */
+.service:nth-child(7) {                        /* Selecciona el séptimo artículo de servicio */
+  margin-left: auto;                         /* Aplica margen izquierdo automático para centrar */
+  margin-right: auto;                        /* Aplica margen derecho automático para centrar */
+}                                             /* Fin del selector para la séptima sección */
 
-/* Estilo para los párrafos de cada sección */
-.service p {
-  font-size: 1rem;            /* Tamaño de fuente legible */
-  line-height: 1.5;           /* Altura de línea para mejorar la lectura */
-  color: #666;                /* Color de texto gris suave */
-}
+/* Inicio del selector para la imagen de cada servicio */
+.service-img {                                 /* Selecciona la imagen dentro de cada servicio */
+  width: 90px;                               /* Establece un ancho fijo para la imagen */
+  height: 90px;                              /* Establece una altura fija para la imagen */
+  object-fit: cover;                         /* Hace que la imagen cubra el contenedor sin distorsionarse */
+  margin-right: 15px;                         /* Aplica un margen a la derecha para separar la imagen del contenido */
+}                                             /* Fin del selector .service-img */
+
+/* Inicio del selector para el título (h2) dentro de cada servicio */
+.service h2 {                                  /* Selecciona el elemento h2 dentro de cada servicio */
+  margin-top: 0;                             /* Elimina el margen superior para una mejor alineación */
+  color: #83557f;                            /* Establece el color del texto del título */
+}                                             /* Fin del selector para .service h2 */
+
+/* Inicio del selector para el párrafo (p) dentro de cada servicio */
+.service p {                                   /* Selecciona el párrafo dentro de cada servicio */
+  font-size: 1rem;                           /* Define un tamaño de fuente legible */
+  line-height: 1.5;                          /* Establece una altura de línea para mejorar la lectura */
+  color: #666;                               /* Asigna un color gris suave al texto del párrafo */
+}                                             /* Fin del selector para .service p */
+
 /* ===================== */
 /* Sección About         */
 /* ===================== */
