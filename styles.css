@@ -123,59 +123,65 @@ h2 {
 /* ===================== */
 /* Estilos para la Sección de Catálogo */
 /* ===================== */
-
-/* Contenedor general del catálogo */
-#catalogo {
-  background-color: #92929220;      /* Fondo claro */
-  padding: 40px 20px;             /* Espaciado interno */
-  max-width: 1200px;              /* Ancho máximo */
-  margin: 0 auto;                 /* Centrado horizontal */
+/* Animación para que el elemento aparezca desvaneciéndose y subiendo */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Título general del catálogo */
 #catalogo > h2 {
-  text-align: center;             /* Centra el título */
-  margin-bottom: 30px;            /* Espacio inferior */
+  text-align: center;                /* Centra el título */
+  margin-bottom: 30px;               /* Espacio inferior */
 }
 
 /* Cada recuadro de producto */
 .producto {
-  border: 1px solid #ccc;         /* Borde para delimitar el recuadro */
-  margin-bottom: 20px;            /* Separación entre productos */
-  padding: 20px;                  /* Espaciado interno */
-  border-radius: 5px;             /* Bordes redondeados */
-  background-color: #fdfdfd;      /* Fondo claro */
+  border: 1px solid #ccc;            /* Borde para delimitar el recuadro */
+  margin: 40px auto;                 /* Márgenes superior/inferior y centrado horizontal */
+  padding: 20px;                     /* Espaciado interno */
+  border-radius: 25px;                /* Bordes redondeados */
+  background-color: #fdfdfdd8;         /* Fondo claro */
+  width: 80%;                        /* Ocupa el 90% del ancho del contenedor padre */
+  animation: fadeInUp 0.5s ease-out;  /* Animación de aparición en 0.5 segundos */
 }
 
 /* Título de cada producto, centrado */
 .producto h2 {
-  text-align: center;             /* Centra el título */
-  margin-bottom: 20px;            /* Espacio inferior */
+  text-align: center;                /* Centra el título */
+  margin-bottom: 20px;               /* Espacio inferior */
 }
 
 /* Contenedor para descripción e imagen */
 .contenido-producto {
-  display: flex;                  /* Utiliza Flexbox para alinear elementos */
-  align-items: center;            /* Alinea verticalmente al centro */
-  justify-content: space-between; /* Distribuye espacio entre descripción e imagen */
+  display: flex;                     /* Utiliza Flexbox para alinear elementos */
+  align-items: center;               /* Alinea verticalmente al centro */
+  justify-content: space-between;    /* Distribuye espacio entre descripción e imagen */
 }
 
 /* Asegura que la descripción aparezca a la izquierda */
 .info-producto {
-  order: 1;                       /* Prioridad para mostrar a la izquierda */
-  flex: 1;                        /* Ocupa el espacio disponible */
-  margin-right: 20px;             /* Espacio a la derecha para separar de la imagen */
+  order: 1;                         /* Prioridad para mostrar a la izquierda */
+  flex: 1;                          /* Ocupa el espacio disponible */
+  margin-right: 20px;               /* Espacio a la derecha para separar de la imagen */
 }
 
 /* Asegura que la imagen aparezca a la derecha */
 .contenido-producto img {
-  order: 2;                       /* Coloca la imagen en el segundo lugar */
-  flex: 0 0 300px;                /* Ancho fijo para la imagen (ajustable) */
-  width: 300px;                   /* Ancho de la imagen */
-  height: auto;                   /* Mantiene la proporción original */
-  border-radius: 5px;             /* Bordes redondeados en la imagen */
-  margin-left: 20px;              /* Espacio a la izquierda de la imagen */
+  order: 2;                         /* Coloca la imagen en el segundo lugar */
+  flex: 0 0 300px;                  /* Ancho fijo para la imagen (ajustable) */
+  width: 300px;                     /* Ancho de la imagen */
+  height: auto;                     /* Mantiene la proporción original */
+  border-radius: 5px;               /* Bordes redondeados en la imagen */
+  margin-left: 20px;                /* Espacio a la izquierda de la imagen */
 }
+
 
 /* Estilos para el anuncio flotante ---------------------------------
 -----------------------------------------------------------------*/
