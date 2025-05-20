@@ -402,3 +402,17 @@ h2 {
   font-size: 1rem; /* Tamaño del texto */
   line-height: 1.5; /* Altura de línea para facilitar lectura */
 }
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: auto;
+}
