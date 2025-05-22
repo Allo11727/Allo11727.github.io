@@ -1,5 +1,5 @@
- /* Estilos generales */
- body {
+/* Estilos generales */
+body {
     font-family: 'Poppins', sans-serif; /* Fuente principal moderna */
     margin: 0; /* Elimina márgenes por defecto */
     padding: 0; /* Elimina relleno por defecto */
@@ -7,7 +7,6 @@
     color: #333; /* Color del texto en tono oscuro */
     text-align: center; /* Alineación del texto */
     padding-top: 80px; /* Ajusta el espacio para que el contenido no se superponga */
-
 }
 
 /* Estilos para el encabezado */
@@ -15,9 +14,9 @@ header {
     position: fixed; /* Fija el encabezado en la parte superior */
     top: 0; /* Asegura que esté pegado al borde superior */
     left: 0; /* Lo alinea al borde izquierdo */
-    width: 99%; /* Hace que ocupe todo el ancho de la pantalla */
-    background-color: #7ab8f7; /* Color de fondo */
-    color: white; /* Color del texto */
+    width: 100%; /* Hace que ocupe todo el ancho de la pantalla */
+    background-color: #ffffff; /* Color de fondo */
+    color: rgb(17, 28, 236); /* Color del texto */
     padding: 20px; /* Espaciado interno */
     display: flex; /* Activa flexbox */
     justify-content: space-between; /* Separa los elementos dentro del header */
@@ -27,11 +26,22 @@ header {
 
 /* Contenedor del logo */
 .logo {
-    font-size: 60px; /* Tamaño de fuente más grande */
-    font-weight: bold; /* Hace el texto más grueso */
+    display: flex;          /* Alinea imagen y texto */
+    align-items: center;    /* Centra verticalmente */
+    font-size: 60px;        /* Tamaño de fuente grande */
+    font-weight: bold;      /* Texto grueso */
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
-    }
+}
+
+/* Imagen del logo */
+header .logo img {
+    max-height: 150px;       /* Altura máxima */
+    width: auto;            /* Mantiene proporción */
+    margin-right: 10px;     /* Espacio entre imagen y texto */
+    display: inline-block;
+    vertical-align: middle;
+}
 
 /* Estilos para la navegación */
 nav ul {
@@ -46,14 +56,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0); /* Texto en blanco */
+    color: rgb(0, 0, 0); /* Texto en negro */
     text-decoration: none; /* Elimina subrayado */
-    font-weight: 600; /* Hace el texto más grueso */
-    font-size: 18px; /* Ajusta el tamaño de fuente */
+    font-weight: 600; /* Texto grueso */
+    font-size: 18px; /* Tamaño de fuente */
 }
 
 nav ul li a:hover {
-    color: #cd32c3; /* Cambia a verde al pasar el mouse */
+    color: #cd32c3; /* Cambio de color al pasar el mouse */
 }
 
 /* Estilos para el contenido principal */
@@ -63,7 +73,7 @@ main {
     padding: 20px; /* Espaciado interno */
     background: white; /* Fondo en color blanco */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra ligera */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 /* Estilos para las secciones */
@@ -86,7 +96,7 @@ h2 {
     border: none; /* Sin bordes */
     padding: 10px 20px; /* Espaciado interno */
     font-size: 16px; /* Tamaño del texto */
-    cursor: pointer; /* Cambia el cursor a puntero */
+    cursor: pointer; /* Cursor puntero */
     border-radius: 5px; /* Bordes redondeados */
     transition: 0.3s; /* Transición suave */
 }
@@ -96,12 +106,11 @@ h2 {
 }
 
 /* Estilos para el pie de página */
-.footer-contacto{
+.footer-contacto {
     background-color: #002366; /* Fondo oscuro */
     color: white; /* Texto en blanco */
     padding: 10px; /* Espaciado interno */
     width: 100%; /* Ancho completo */
-    bottom: 0; /* Pegado al borde inferior */
     margin: 10px 0; /* Espaciado entre líneas */
     font-size: 15px; /* Tamaño del texto */
 }
@@ -117,7 +126,7 @@ h2 {
 
 @keyframes mover {
     from { transform: translateY(20px); opacity: 0; } /* Comienza desde abajo */
-    to { transform: translateY(0); opacity: 1; } /* Se desplaza hacia arriba */
+    to { transform: translateY(0); opacity: 1; }       /* Termina en posición */
 }
 
 /* ===================== */
@@ -125,294 +134,263 @@ h2 {
 /* ===================== */
 /* Animación para que el elemento aparezca desvaneciéndose y subiendo */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Título general del catálogo */
 #catalogo > h2 {
-  text-align: center;                /* Centra el título */
-  margin-bottom: 30px;               /* Espacio inferior */
+    text-align: center;     /* Centra el título */
+    margin-bottom: 30px;    /* Espacio inferior */
 }
 
 /* Cada recuadro de producto */
 .producto {
-  border: 1px solid #ccc;            /* Borde para delimitar el recuadro */
-  margin: 40px auto;                 /* Márgenes superior/inferior y centrado horizontal */
-  padding: 20px;                     /* Espaciado interno */
-  border-radius: 25px;                /* Bordes redondeados */
-  background-color: #fdfdfdd8;         /* Fondo claro */
-  width: 80%;                        /* Ocupa el 90% del ancho del contenedor padre */
-  animation: fadeInUp 0.5s ease-out;  /* Animación de aparición en 0.5 segundos */
+    border: 1px solid #ccc;            /* Borde para delimitar el recuadro */
+    margin: 40px auto;                 /* Márgenes superior/inferior y centrado */
+    padding: 20px;                     /* Espaciado interno */
+    border-radius: 25px;               /* Bordes redondeados */
+    background-color: #fdfdfdd8;       /* Fondo claro */
+    width: 80%;                        /* Ocupa el 80% del ancho */
+    animation: fadeInUp 0.5s ease-out; /* Animación de aparición */
 }
 
 /* Título de cada producto, centrado */
 .producto h2 {
-  text-align: center;                /* Centra el título */
-  margin-bottom: 20px;               /* Espacio inferior */
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espacio inferior */
 }
 
 /* Contenedor para descripción e imagen */
 .contenido-producto {
-  display: flex;                     /* Utiliza Flexbox para alinear elementos */
-  align-items: center;               /* Alinea verticalmente al centro */
-  justify-content: space-between;    /* Distribuye espacio entre descripción e imagen */
+    display: flex;                  /* Flexbox para alinear elementos */
+    align-items: center;            /* Alinea verticalmente */
+    justify-content: space-between; /* Distribuye espacio */
 }
 
-/* Asegura que la descripción aparezca a la izquierda */
+/* Información del producto (texto) */
 .info-producto {
-  order: 1;                         /* Prioridad para mostrar a la izquierda */
-  flex: 1;                          /* Ocupa el espacio disponible */
-  margin-right: 20px;               /* Espacio a la derecha para separar de la imagen */
+    order: 1;            /* Muestra a la izquierda */
+    flex: 1;             /* Ocupa espacio disponible */
+    margin-right: 20px;  /* Separación con la imagen */
 }
 
-/* Asegura que la imagen aparezca a la derecha */
+/* Imagen del producto */
 .contenido-producto img {
-  order: 2;                         /* Coloca la imagen en el segundo lugar */
-  flex: 0 0 300px;                  /* Ancho fijo para la imagen (ajustable) */
-  width: 300px;                     /* Ancho de la imagen */
-  height: auto;                     /* Mantiene la proporción original */
-  border-radius: 5px;               /* Bordes redondeados en la imagen */
-  margin-left: 20px;                /* Espacio a la izquierda de la imagen */
-}
-
-
-/* Estilos para el anuncio flotante ---------------------------------
------------------------------------------------------------------*/
-#contacto-flotante {
-    position: fixed; /* Posición fija en la pantalla */
-    bottom: 450px; /* Separación del borde inferior */
-    right: 10px; /* Separación del borde derecho */
-    background-color: #32cd32; /* Fondo verde */
-    color: white; /* Texto en blanco */
-    padding: 15px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera */
-    text-align: left; /* Alineación del texto */
-    font-size: 18px; /* Tamaño del texto */
-}
-
-#contacto-flotante:hover {
-    background-color: #28a745; /* Cambio a verde oscuro al pasar el mouse */
+    order: 2;               /* Muestra a la derecha */
+    flex: 0 0 300px;        /* Ancho fijo */
+    width: 300px;           /* Ancho */
+    height: auto;           /* Proporción original */
+    border-radius: 5px;     /* Bordes redondeados */
+    margin-left: 20px;      /* Espacio con el texto */
 }
 
 /* ===================== */
 /* Estilos para el Slider */
 /* ===================== */
-
-/* Contenedor principal del slider */
 .slider {
-    height: 650px;          /* Altura fija de 400px para el carrusel */
-    width: 100%;             /* Ancho del carrusel al 80% del contenedor padre */
-    /*max-width:1400px;       /* Ancho máximo de 800px (opcional) */
-    /*margin: auto;           /* Centrado horizontal */
-    overflow: hidden;       /* Oculta contenido desbordado */
-    position: relative;     /* Para posicionar elementos internos (como flechas) */
-      }
-  
-  /* Contenedor de todas las diapositivas */
-  .slides {
-    display: flex; /* Coloca las diapositivas en una fila */
-    transition: transform 0.5s ease-in-out; /* Transición suave entre diapositivas */
-  }
-  
-  /* Cada diapositiva */
-  .slide {
-    min-width: 100%; /* Cada diapositiva ocupa el 100% del contenedor */
-    box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho */
-    display: none; /* Oculta las diapositivas por defecto */
-  }
-  
-  /* Diapositiva activa */
-  .slide.active {
-    display: block; /* Muestra solo la diapositiva con clase "active" */
-  }
-  
-  /* Estilo para la imagen dentro de cada diapositiva */
-  .slide img {
-    width: 100%;            /* La imagen ocupará el ancho completo del contenedor */
-    height: 100%;           /* La imagen se ajustará a la altura del contenedor */
-    object-fit: cover;      /* Cubre el contenedor sin distorsionar la imagen */
-  }
-  
-  /* Controles de navegación (flechas) */
-  .navigation .prev,
-  .navigation .next {
-    cursor: pointer; /* Cambia el cursor para indicar interactividad */
-    position: absolute; /* Posiciona las flechas de forma absoluta */
-    top: 50%; /* Centra verticalmente las flechas */
-    transform: translateY(-50%); /* Ajusta para centrar exactamente */
-    font-size: 2rem; /* Tamaño de la fuente de las flechas */
-    color: #ffffff; /* Color blanco para las flechas */
-    padding: 0.5rem; /* Espaciado interno */
-    border-radius: 50%; /* Bordes redondeados */
-  }
-  
-  /* Posición de la flecha izquierda */
-  .navigation .prev {
-    left: 10px; /* Ubicada a 10px del borde izquierdo */
-  }
-  
-  /* Posición de la flecha derecha */
-  .navigation .next {
-    right: 10px; /* Ubicada a 10px del borde derecho */
-  }
-  
-  /* Contenedor para los indicadores (puntos) */
-  .dots {
-    text-align: center; /* Centra los puntos horizontalmente */
-    position: absolute; /* Posiciona el contenedor de puntos de forma absoluta */
-    bottom: 15px; /* Ubica el contenedor a 15px del fondo */
-    width: 100%; /* Ocupa el ancho completo del slider */
-  }
-  
-  /* Cada punto indicador */
-  .dot {
-    display: inline-block; /* Muestra los puntos en línea */
-    height: 15px; /* Altura del punto */
-    width: 15px; /* Ancho del punto */
-    margin: 0 5px; /* Espaciado horizontal entre puntos */
-    background-color: rgba(255, 255, 255, 0.5); /* Color semitransparente */
-    border-radius: 50%; /* Forma circular */
-    cursor: pointer; /* Indica que el punto es clicable */
-  }
-  
-  /* Punto activo */
-  .dot.active {
-    background-color: #fff; /* Color blanco para el punto activo */
-  }
- 
+    height: 650px;       /* Altura fija */
+    width: 100%;         /* Ancho completo */
+    overflow: hidden;    /* Ocultar desbordes */
+    position: relative;  /* Para posicionar flechas */
+}
+
+.slides {
+    display: flex; /* Fila de diapositivas */
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+}
+
+.slide {
+    min-width: 100%;     /* Ocupa todo el contenedor */
+    box-sizing: border-box;
+    display: none;       /* Ocultas por defecto */
+}
+
+.slide.active {
+    display: block;      /* Muestra la activa */
+}
+
+.slide img {
+    width: 100%;         /* Ancho completo */
+    height: 100%;        /* Altura completa */
+    object-fit: cover;   /* Cubre sin distorsión */
+}
+
+.navigation .prev,
+.navigation .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.navigation .prev { left: 10px; }
+.navigation .next { right: 10px; }
+
+.dots {
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+.dot {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #fff;
+}
+
 /* ---------------------------------------------------*/
- /* Contenedor de todas las secciones de servicios en INDEX PRINCIPAL*/
-/* Inicio del selector para el contenedor principal de servicios */
-.services {                                    /* Selecciona el contenedor de todas las secciones de servicios */
-  display: flex;                             /* Activa Flexbox para organizar los elementos en línea */
-  flex-wrap: wrap;                           /* Permite que los elementos se envuelvan a la siguiente línea */
-}                                             /* Fin del selector .services */
+/* Sección de servicios en INDEX PRINCIPAL */
+/* ---------------------------------------------------*/
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-/* Inicio del selector para cada artículo de servicio */
-.service {                                     /* Selecciona cada artículo que representa un servicio */
-  display: flex;                             /* Utiliza Flexbox para alinear la imagen y el contenido en línea */
-  align-items:center;                       /* Alinea verticalmente los elementos al centro */
-  flex: 1 1 calc(25% - 20px);             /* Define un ancho base para lograr 3 columnas (ajustado con márgenes) */
-  background-color: #f7f7f7;                   /* Aplica un color de fondo claro a cada sección */
-  margin: 10px;                              /* Establece un margen externo para separar las secciones */
-  padding: 20px;                             /* Aplica un espacio interno entre el contenido y el borde */
-  border-radius: 5px;                        /* Redondea los bordes de cada sección */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);    /* Añade una sombra sutil para dar un efecto de profundidad */
-}                                             /* Fin del selector .service */
+.service {
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(25% - 20px);
+    background-color: #f7f7f7;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-/* Selector para centrar la séptima sección en la última fila */
-.service:nth-child(7) {                        /* Selecciona el séptimo artículo de servicio */
-  margin-left: auto;                         /* Aplica margen izquierdo automático para centrar */
-  margin-right: auto;                        /* Aplica margen derecho automático para centrar */
-}                                             /* Fin del selector para la séptima sección */
+.service:nth-child(7) {
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* Inicio del selector para la imagen de cada servicio */
-.service-img {                                 /* Selecciona la imagen dentro de cada servicio */
-  width: 90px;                               /* Establece un ancho fijo para la imagen */
-  height: 90px;                              /* Establece una altura fija para la imagen */
-  object-fit: cover;                         /* Hace que la imagen cubra el contenedor sin distorsionarse */
-  margin-right: 15px;                         /* Aplica un margen a la derecha para separar la imagen del contenido */
-}                                             /* Fin del selector .service-img */
+.service-img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin-right: 15px;
+}
 
-/* Inicio del selector para el título (h2) dentro de cada servicio */
-.service h2 {                                  /* Selecciona el elemento h2 dentro de cada servicio */
-  margin-top: 0;                             /* Elimina el margen superior para una mejor alineación */
-  color: #83557f;                            /* Establece el color del texto del título */
-}                                             /* Fin del selector para .service h2 */
+.service h2 {
+    margin-top: 0;
+    color: #83557f;
+}
 
-/* Inicio del selector para el párrafo (p) dentro de cada servicio */
-.service p {                                   /* Selecciona el párrafo dentro de cada servicio */
-  font-size: 1rem;                           /* Define un tamaño de fuente legible */
-  line-height: 1.5;                          /* Establece una altura de línea para mejorar la lectura */
-  color: #666;                               /* Asigna un color gris suave al texto del párrafo */
-}                                             /* Fin del selector para .service p */
+.service p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
 
 /* ===================== */
 /* Sección About         */
 /* ===================== */
 .about {
-  padding: 50px 20px; /* Espaciado interno de la sección */
-  background-color: #f9f9f9; /* Fondo claro */
+    padding: 50px 20px;
+    background-color: #f9f9f9;
 }
+
 .about .container {
-  display: flex; /* Organiza en columnas */
-  flex-wrap: wrap; /* Permite varias filas si es necesario */
-  justify-content: space-between; /* Distribuye el espacio */
-  align-items: center; /* Alinea verticalmente */
-  max-width: 1200px; /* Ancho máximo */
-  margin: 0 auto; /* Centrado horizontal */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 .about-text {
-  flex: 1 1 50%; /* Ocupa la mitad del contenedor */
-  padding: 20px; /* Espaciado interno */
+    flex: 1 1 50%;
+    padding: 20px;
 }
+
 .about-text h2 {
-  font-size: 2rem; /* Tamaño del título */
-  margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
+
 .about-text p {
-  line-height: 1.6; /* Altura de línea para facilitar lectura */
+    line-height: 1.6;
 }
+
 .about-image {
-  flex: 1 1 40%; /* Ocupa un poco menos de la mitad */
-  padding: 20px; /* Espaciado interno */
+    flex: 1 1 40%;
+    padding: 20px;
 }
+
 .about-image img {
-  width: 100%; /* Imagen a ancho completo */
-  border-radius: 5px; /* Bordes redondeados */
+    width: 100%;
+    border-radius: 5px;
 }
 
 /* ===================== */
-/* Sección Visión, Misión y Política de Calidad */
+/* Visión, Misión y Política de Calidad */
 /* ===================== */
 #vision-mision {
-  padding: 50px 20px; /* Espaciado interno */
-  background-color: #fff; /* Fondo blanco */
-}
-.container-values {
-  display: flex; /* Organiza los artículos en fila */
-  flex-wrap: wrap; /* Permite varias filas en dispositivos pequeños */
-  justify-content: space-around; /* Distribuye los artículos */
-  max-width: 1200px; /* Ancho máximo */
-  margin: 0 auto; /* Centrado horizontal */
-}
-.value-item {
-  flex: 1 1 30%; /* Cada artículo ocupa aproximadamente 30% del ancho */
-  background-color: #dadada; /* Fondo blanco */
-  margin: 10px; /* Espaciado externo */
-  padding: 20px; /* Espaciado interno */
-  border-radius: 5px; /* Bordes redondeados */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  text-align: center; /* Centra el contenido */
-}
-.value-item h2 {
-  margin-top: 0; /* Sin margen superior */
-  font-size: 1.5rem; /* Tamaño del título */
-  margin-bottom: 15px; /* Espaciado inferior */
-}
-.value-item p {
-  font-size: 1rem; /* Tamaño del texto */
-  line-height: 1.5; /* Altura de línea para facilitar lectura */
+    padding: 50px 20px;
+    background-color: #fff;
 }
 
+.container-values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-item {
+    flex: 1 1 30%;
+    background-color: #dadada;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.value-item h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.value-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ===================== */
+/* Ícono WhatsApp flotante */
+/* ===================== */
 .whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Por encima de otros elementos */
 }
 
 .whatsapp-float img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
