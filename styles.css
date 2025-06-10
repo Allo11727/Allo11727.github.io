@@ -6,7 +6,7 @@ body {
     background: linear-gradient(to right, #ffffff, #ffffff); /* Fondo degradado */
     color: #333; /* Color del texto en tono oscuro */
     text-align: center; /* Alineación del texto */
-    padding-top: 120px; /* Ajusta el espacio para que el contenido no se superponga */
+    padding-top: 80px; /* Ajusta el espacio para que el contenido no se superponga */
 }
 
 /* Estilos para el encabezado */
