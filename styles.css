@@ -6,7 +6,12 @@ body {
     background: linear-gradient(to right, #ffffff, #ffffff); /* Fondo degradado */
     color: #333; /* Color del texto en tono oscuro */
     text-align: center; /* Alineación del texto */
-    padding-top: 80px; /* Ajusta el espacio para que el contenido no se superponga */
+    padding-top: 120px; /* Ajusta el espacio para que el contenido no se superponga */
+}
+
+/* Ajuste de espacio adicional solo para la página de contacto */
+body.contact-body {
+    padding-top: 200px;
 }
 
 /* Estilos para el encabezado */
