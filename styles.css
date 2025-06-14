@@ -16,7 +16,7 @@ header {
     display: flex; /* Activa flexbox */
     justify-content: space-between; /* Separa los elementos dentro del header */
     align-items: center; /* Alinea los elementos verticalmente */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 98%; /* Ocupa todo el ancho disponible */
 }
 
 /* Contenedor del logo */
