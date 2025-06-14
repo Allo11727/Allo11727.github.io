@@ -379,6 +379,31 @@ h2 {
 }
 
 /* ===================== */
+/* Redes sociales (página de contacto) */
+/* ===================== */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-item {
+    text-align: center;
+}
+
+.social-item img {
+    width: 80px;
+    height: auto;
+}
+
+.social-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+/* ===================== */
 /* Ícono WhatsApp flotante */
 /* ===================== */
 .whatsapp-float {
