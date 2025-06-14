@@ -6,22 +6,17 @@ body {
     background: linear-gradient(to right, #ffffff, #ffffff); /* Fondo degradado */
     color: #333; /* Color del texto en tono oscuro */
     text-align: center; /* Alineación del texto */
-    padding-top: 80px; /* Ajusta el espacio para que el contenido no se superponga */
 }
 
 /* Estilos para el encabezado */
 header {
-    position: fixed; /* Fija el encabezado en la parte superior */
-    top: 0; /* Asegura que esté pegado al borde superior */
-    left: 0; /* Lo alinea al borde izquierdo */
-    width: 98%; /* Hace que ocupe todo el ancho de la pantalla */
     background-color: #ffffff; /* Color de fondo */
     color: rgb(17, 28, 236); /* Color del texto */
     padding: 20px; /* Espaciado interno */
     display: flex; /* Activa flexbox */
     justify-content: space-between; /* Separa los elementos dentro del header */
     align-items: center; /* Alinea los elementos verticalmente */
-    z-index: 1000; /* Asegura que siempre quede por encima de otros elementos */
+    width: 100%; /* Ocupa todo el ancho disponible */
 }
 
 /* Contenedor del logo */
