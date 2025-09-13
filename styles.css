@@ -189,68 +189,18 @@ h2 {
 /* ===================== */
 /* Estilos para el Slider */
 /* ===================== */
-.slider {
+/* Video principal en el hero */
+.hero-video {
     height: 650px;       /* Altura fija */
     width: 100%;         /* Ancho completo */
     overflow: hidden;    /* Ocultar desbordes */
-    position: relative;  /* Para posicionar flechas */
+    position: relative;  /* Posicionamiento */
 }
 
-.slides {
-    display: flex; /* Fila de diapositivas */
-    transition: transform 0.5s ease-in-out; /* Transición suave */
-}
-
-.slide {
-    min-width: 100%;     /* Ocupa todo el contenedor */
-    box-sizing: border-box;
-    display: none;       /* Ocultas por defecto */
-}
-
-.slide.active {
-    display: block;      /* Muestra la activa */
-}
-
-.slide img {
+.hero-video video {
     width: 100%;         /* Ancho completo */
     height: 100%;        /* Altura completa */
     object-fit: cover;   /* Cubre sin distorsión */
-}
-
-.navigation .prev,
-.navigation .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    color: #fff;
-    padding: 0.5rem;
-    border-radius: 50%;
-}
-
-.navigation .prev { left: 10px; }
-.navigation .next { right: 10px; }
-
-.dots {
-    text-align: center;
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
-}
-
-.dot {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #fff;
 }
 
 /* ---------------------------------------------------*/
