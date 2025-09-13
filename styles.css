@@ -151,7 +151,7 @@ h2 {
     margin: 40px auto;                 /* Márgenes superior/inferior y centrado */
     padding: 20px;                     /* Espaciado interno */
     border-radius: 25px;               /* Bordes redondeados */
-    background-color: #fdfdfdd8;       /* Fondo claro */
+    background-color: #97acc8;       /* Fondo claro */
     width: 80%;                        /* Ocupa el 80% del ancho */
     animation: fadeInUp 0.5s ease-out; /* Animación de aparición */
 }
@@ -215,7 +215,7 @@ h2 {
     display: flex;
     align-items: center;
     flex: 1 1 calc(25% - 20px);
-    background-color: #f7f7f7;
+    background-color: #97acc8;
     margin: 10px;
     padding: 20px;
     border-radius: 5px;
@@ -236,13 +236,13 @@ h2 {
 
 .service h2 {
     margin-top: 0;
-    color: #83557f;
+    color: #333;
 }
 
 .service p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #666;
+    color: #333;
 }
 
 /* ===================== */
@@ -250,7 +250,7 @@ h2 {
 /* ===================== */
 .about {
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: #97acc8;
 }
 
 .about .container {
@@ -304,7 +304,7 @@ h2 {
 
 .value-item {
     flex: 1 1 30%;
-    background-color: #dadada;
+    background-color: #97acc8;
     margin: 10px;
     padding: 20px;
     border-radius: 5px;
