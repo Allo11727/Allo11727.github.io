@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #cd32c3; /* Cambio de color al pasar el mouse */
+    color: #099197; /* Cambio de color al pasar el mouse */
 }
 
 /* Estilos para el contenido principal */
@@ -86,7 +86,7 @@ h2 {
 
 /* Estilos para los botones */
 .btn {
-    background-color: #222; /* Fondo oscuro */
+    background-color: #099197; /* Fondo principal del botón */
     color: white; /* Texto en blanco */
     border: none; /* Sin bordes */
     padding: 10px 20px; /* Espaciado interno */
@@ -97,17 +97,23 @@ h2 {
 }
 
 .btn:hover {
-    background-color: #555; /* Cambio de color al pasar el mouse */
+    background-color: #077478; /* Variante más oscura al pasar el mouse */
 }
 
 /* Estilos para el pie de página */
 .footer-contacto {
-    background-color: #002366; /* Fondo oscuro */
-    color: white; /* Texto en blanco */
+    background-color: #099197; /* Fondo del footer */
+    color: white; /* Texto en blanco para contraste */
     padding: 10px; /* Espaciado interno */
     width: 100%; /* Ancho completo */
     margin: 10px 0; /* Espaciado entre líneas */
     font-size: 15px; /* Tamaño del texto */
+}
+
+.footer-contacto p,
+.footer-contacto a,
+.footer-contacto strong {
+    color: white; /* Asegura contraste para todo el texto */
 }
 
 /* Animaciones de desplazamiento */
