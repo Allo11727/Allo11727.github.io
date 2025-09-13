@@ -36,7 +36,7 @@ header .logo img {
     margin-right: 10px;     /* Espacio entre imagen y texto */
     display: inline-block;
     vertical-align: middle;
-    transform: rotate(-90deg); /* Asegura orientación correcta */
+  /*  transform: rotate(-90deg); /* Asegura orientación correcta */
 }
 
 /* Estilos para la navegación */
@@ -372,6 +372,7 @@ h2 {
     width: 100%;
     height: auto;
 }
+
 
 
 
