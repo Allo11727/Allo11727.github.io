@@ -3,14 +3,14 @@ body {
     font-family: 'Poppins', sans-serif; /* Fuente principal moderna */
     margin: 0; /* Elimina márgenes por defecto */
     padding: 0; /* Elimina relleno por defecto */
-    background: linear-gradient(to right, #ffffff, #ffffff); /* Fondo degradado */
+    background: linear-gradient(to right, #bce4e5, #bce4e5); /* Fondo degradado */
     color: #333; /* Color del texto en tono oscuro */
     text-align: center; /* Alineación del texto */
 }
 
 /* Estilos para el encabezado */
 header {
-    background-color: #ffffff; /* Color de fondo */
+    background-color: #bce4e5; /* Color de fondo */
     color: rgb(17, 28, 236); /* Color del texto */
     padding: 20px; /* Espaciado interno */
     display: flex; /* Activa flexbox */
