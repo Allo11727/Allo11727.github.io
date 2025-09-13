@@ -31,7 +31,7 @@ header {
 
 /* Imagen del logo */
 header .logo img {
-    max-height: 120px;       /* Altura máxima */
+    max-height: 160px;       /* Altura máxima */
     width: auto;            /* Mantiene proporción */
     margin-right: 10px;     /* Espacio entre imagen y texto */
     display: inline-block;
@@ -372,6 +372,7 @@ h2 {
     width: 100%;
     height: auto;
 }
+
 
 
 
