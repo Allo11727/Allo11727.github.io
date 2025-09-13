@@ -10,7 +10,7 @@ body {
 
 /* Estilos para el encabezado */
 header {
-    background-color: ##bce4e5; /* Color de fondo */
+    background-color: #bce4e5; /* Color de fondo */
     color: rgb(17, 28, 236); /* Color del texto */
     padding: 20px; /* Espaciado interno */
     display: flex; /* Activa flexbox */
@@ -370,5 +370,6 @@ h2 {
     width: 100%;
     height: auto;
 }
+
 
 
