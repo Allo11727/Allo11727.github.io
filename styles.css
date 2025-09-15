@@ -40,7 +40,7 @@ header .logo img {
 
 /* Reutilizable para imágenes de logotipo con orientación vertical */
 .rotated-logo {
-    transform: rotate(-90deg); /* Ajusta la orientación del archivo original */
+    transform: rotate(-0deg); /* Ajusta la orientación del archivo original */
     transform-origin: center center; /* Mantiene el giro sobre el centro */
 }
 
@@ -376,6 +376,7 @@ h2 {
     width: 100%;
     height: auto;
 }
+
 
 
 
