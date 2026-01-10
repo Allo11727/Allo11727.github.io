@@ -203,7 +203,7 @@ h2 {
 /* ===================== */
 /* Video principal en el hero */
 .hero-video {
-    height: 650px;       /* Altura fija */
+    height: 450px;       /* Altura fija */
     width: 100%;         /* Ancho completo */
     overflow: hidden;    /* Ocultar desbordes */
     position: relative;  /* Posicionamiento */
@@ -376,6 +376,7 @@ h2 {
     width: 100%;
     height: auto;
 }
+
 
 
 
