@@ -1,151 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"> <!-- Define la codificación de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsiva -->
-    <title>Todo Limpio - Inicio</title> <!-- Título de la página -->
-    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo CSS principal -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GOC — productos de limpieza para tu hogar, negocio y automóvil. Explora nuestras soluciones y contáctanos por WhatsApp.">
+  <meta name="theme-color" content="#f8f7f4">
+  <meta property="og:title" content="GOC | Productos de limpieza">
+  <meta property="og:description" content="Productos de limpieza para tu hogar, negocio y automóvil.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://todolimpio.org/">
+  <title>GOC | Productos de limpieza</title>
+  <link rel="canonical" href="https://todolimpio.org/">
+  <link rel="icon" href="https://raw.githubusercontent.com/Allo11727/Allo11727.github.io/90e496e15e67c49d7fe46406ff91f0fffbac0b0a/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cabecera principal -->
-    <header>
-        <div class="logo"> <img class="rotated-logo" src="logo.png" alt="GoC">  </div> <!-- Logo de la marca -->
-        <nav> <!-- Menú de navegación -->
-            <ul>
-                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
-                <li><a href="nosotros.html">Nosotros</a></li> <!-- Enlace a la página de nosotros -->
-                <li><a href="catalogo2026-01.pdf" target="_blank" rel="noopener noreferrer">Catálogo</a></li> <!-- Abre el catálogo en PDF en una nueva pestaña -->
-                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
-            </ul>
-        </nav>
-    </header>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- Video de presentación -->
-    <div class="hero-video"> <!-- Contenedor del video principal -->
-      <video autoplay loop muted playsinline>
-        <source src="video.mp4" type="video/mp4">
-      </video>
+  <header class="site-header" id="inicio">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="GOC, inicio">
+        <img src="https://raw.githubusercontent.com/Allo11727/Allo11727.github.io/90e496e15e67c49d7fe46406ff91f0fffbac0b0a/logo.png" alt="GOC">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a class="nav-link active" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#productos">Productos</a>
+        <a class="nav-link" href="#soluciones">Soluciones</a>
+        <a class="nav-link" href="#nosotros">Nosotros</a>
+        <a class="nav-link" href="contacto.html">Contacto</a>
+        <a class="nav-whatsapp" href="https://wa.me/525543674491?text=Hola%20GOC%2C%20me%20gustar%C3%ADa%20conocer%20sus%20productos." target="_blank" rel="noopener noreferrer">
+          <span aria-hidden="true">◔</span> WhatsApp
+        </a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Sección de productos y servicios -->
-<!-- Inicio del contenedor principal de servicios -->
-<section class="services"> <!-- Contenedor de todas las secciones de servicios -->
-  <!-- Inicio de la Sección 1: Limpieza del Hogar -->
-  <article class="service"> <!-- Artículo que representa el servicio 1 -->
-    <img class="service-img" src="rubro-hogar.PNG" alt="Imagen de servicio 1"> <!-- Imagen representativa del servicio 1 -->
-    <div class="service-content"> <!-- Contenedor para el contenido textual del servicio 1 -->
-      <h2>Limpieza del Hogar</h2> <!-- Título del servicio 1 -->
-      <p>Limpieza eficiente y accesible para el día a día. Ofrecemos jabones diseñados para mantener 
-        tu hogar impecable, con fórmulas seguras y efectivas para toda la familia.</p> <!-- Descripción del servicio 1 -->
-    </div> <!-- Fin del contenedor del contenido textual -->
-  </article> <!-- Fin del artículo del servicio 1 -->
+  <main id="contenido">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">GOC</p>
+          <h1>Productos de limpieza para tu <em>hogar</em>, <em>negocio</em> y <em>automóvil</em>.</h1>
+          <p class="hero-lead">Soluciones de limpieza para diferentes necesidades.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#productos">Ver productos <span>→</span></a>
+            <a class="btn btn-outline" href="https://wa.me/525543674491?text=Hola%20GOC%2C%20me%20gustar%C3%ADa%20conocer%20sus%20productos." target="_blank" rel="noopener noreferrer">
+              <span class="wa-mark" aria-hidden="true">◔</span> Hablar por WhatsApp
+            </a>
+          </div>
+        </div>
 
-  <!-- Inicio de la Sección 2 -->
-  <article class="service"> <!-- Artículo que representa el servicio 2 -->
-    <img class="service-img" src="rubro-hosteleria.PNG" alt="Imagen de servicio 2"> <!-- Imagen representativa del servicio 2 -->
-    <div class="service-content"> <!-- Contenedor para el contenido textual del servicio 2 -->
-      <h2>Hostelería y Turismo</h2> <!-- Título del servicio 2 -->
-      <p>Soluciones de higiene para hoteles, hostales y alojamientos. Nuestros jabones 
-        garantizan limpieza y frescura en cada estancia, cuidando la experiencia de huéspedes y 
-        personal.</p> <!-- Descripción del servicio 2 -->
-    </div> <!-- Fin del contenedor del contenido textual -->
-  </article> <!-- Fin del artículo del servicio 2 -->
+        <div class="hero-product" aria-label="Producto GOC">
+          <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+          <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+          <div class="hero-image-frame">
+            <img src="rubro-cocina.PNG" alt="Productos de limpieza GOC para cocina" fetchpriority="high">
+          </div>
+          <div class="hero-caption">
+            <span>PRODUCTOS GOC</span>
+            <small>Soluciones para diferentes necesidades</small>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#categorias" aria-label="Explorar categorías">↓</a>
+    </section>
 
-  <!-- Inicio de la Sección 3 -->
-  <article class="service"> <!-- Artículo que representa el servicio 3 -->
-    <img class="service-img" src="rubro-cocina.PNG" alt="Imagen de servicio 3"> <!-- Imagen representativa del servicio 3 -->
-    <div class="service-content"> <!-- Contenedor para el contenido textual del servicio 3 -->
-      <h2>Restaurantes y Gastronomía</h2> <!-- Título del servicio 3 -->
-      <p>Higiene profesional en la cocina. Proveemos jabones y desengrasantes 
-        potentes para utensilios, superficies y manos, asegurando el cumplimiento 
-        de normas sanitarias.</p> <!-- Descripción del servicio 3 -->
-    </div> <!-- Fin del contenedor del contenido textual -->
-  </article> <!-- Fin del artículo del servicio 3 -->
+    <section class="section categories" id="categorias">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Explora por categoría</p>
+          <h2>Encuentra lo que necesitas</h2>
+          <span class="gold-rule" aria-hidden="true"></span>
+        </div>
 
-  <!-- Inicio de la Sección 4 -->
-  <article class="service"> <!-- Artículo que representa el servicio 4 -->
-    <img class="service-img" src="rubro.hospital.PNG" alt="Imagen de servicio 4"> <!-- Imagen representativa del servicio 4 -->
-    <div class="service-content"> <!-- Contenedor para el contenido textual del servicio 4 -->
-      <h2>Hospitales y Clínicas</h2> <!-- Título del servicio 4 -->
-      <p>Productos diseñados para entornos de alta exigencia. Nuestras 
-        soluciones de limpieza contribuyen a la desinfección y seguridad en hospitales, 
-        consultorios y centros de salud.</p> <!-- Descripción del servicio 4 -->
-    </div> <!-- Fin del contenedor del contenido textual -->
-  </article> <!-- Fin del artículo del servicio 4 -->
+        <div class="category-grid">
+          <a class="category-card category-clothing" href="#productos">
+            <span class="category-icon" aria-hidden="true">♧</span>
+            <h3>Cuidado de<br>la ropa</h3>
+            <span class="text-link">Ver productos <b>→</b></span>
+          </a>
+          <a class="category-card category-home" href="#productos">
+            <span class="category-icon" aria-hidden="true">⌂</span>
+            <h3>Limpieza del<br>hogar</h3>
+            <span class="text-link">Ver productos <b>→</b></span>
+          </a>
+          <a class="category-card category-hygiene" href="#productos">
+            <span class="category-icon" aria-hidden="true">♢</span>
+            <h3>Higiene</h3>
+            <span class="text-link">Ver productos <b>→</b></span>
+          </a>
+          <a class="category-card category-professional" href="#soluciones">
+            <span class="category-icon" aria-hidden="true">▥</span>
+            <h3>Limpieza<br>profesional</h3>
+            <span class="text-link">Ver soluciones <b>→</b></span>
+          </a>
+          <a class="category-card category-automotive" href="#productos">
+            <span class="category-icon" aria-hidden="true">▱</span>
+            <h3>Cuidado<br>automotriz</h3>
+            <span class="text-link">Ver productos <b>→</b></span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <!-- Inicio de la Sección 5 -->
-  <article class="service"> <!-- Artículo que representa el servicio 5 -->
-    <img class="service-img" src="rubro-laboratorio.PNG" alt="Imagen de servicio 5"> <!-- Imagen representativa del servicio 5 -->
-    <div class="service-content"> <!-- Contenedor para el contenido textual del servicio 5 -->
-      <h2>Laboratorios y Farmacéuticas</h2> <!-- Título del servicio 5 -->
-      <p>Jabones especializados para un ambiente controlado. Eliminación 
-        de residuos sin dejar rastros, garantizando higiene en procesos de 
-        investigación y producción.</p> <!-- Descripción del servicio 5 -->
-    </div> <!-- Fin del contenedor del contenido textual -->
-  </article> <!-- Fin del artículo del servicio 5 -->
+    <section class="section products" id="productos">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">Algunos de nuestros productos</p>
+          <h2>Soluciones que hacen la diferencia</h2>
+        </div>
 
-  <!-- Inicio de la Sección 6 -->
-  <article class="service"> <!-- Artículo que representa el servicio 6 -->
-    <img class="service-img" src="rubro-lavanderia.PNG" alt="Imagen de servicio 6"> <!-- Imagen representativa del servicio 6 -->
-    <div class="service-content"> <!-- Contenedor para el contenido textual del servicio 6 -->
-      <h2>Lavanderías y Tintorerías</h2> <!-- Título del servicio 6 -->
-      <p>Detergentes y jabones de alto rendimiento. Fórmulas efectivas para 
-        la limpieza de ropa, eliminando suciedad y olores sin dañar los tejidos.</p> <!-- Descripción del servicio 6 -->
-    </div> <!-- Fin del contenedor del contenido textual -->
-  </article> <!-- Fin del artículo del servicio 6 -->
+        <div class="product-grid">
+          <article class="product-card product-blue">
+            <div class="product-image product-image-blue">
+              <img src="rubro-lavanderia.PNG" alt="Jabón líquido para ropa de color" loading="lazy">
+            </div>
+            <div class="product-body">
+              <p class="product-category">Cuidado de la ropa</p>
+              <h3>Jabón líquido para ropa de color</h3>
+              <a href="https://wa.me/525543674491?text=Hola%20GOC%2C%20me%20interesa%20el%20Jab%C3%B3n%20l%C3%ADquido%20para%20ropa%20de%20color." target="_blank" rel="noopener noreferrer">Preguntar <span>→</span></a>
+            </div>
+          </article>
 
-  <!-- Inicio de la Sección 7 (la sobrante) -->
-  <article class="service"> <!-- Artículo que representa el servicio 7 -->
-    <img class="service-img" src="rubro-automotriz.PNG" alt="Imagen de servicio 7"> <!-- Imagen representativa del servicio 7 -->
-    <div class="service-content"> <!-- Contenedor para el contenido textual del servicio 7 -->
-      <h2>Industria Automotriz</h2> <!-- Título del servicio 7 -->
-      <p>Desengrasantes y limpiadores para un mantenimiento 
-        impecable. Eliminamos aceites, grasas y suciedad en talleres mecánicos, 
-        fábricas y estaciones de servicio.</p> <!-- Descripción del servicio 7 -->
-    </div> <!-- Fin del contenedor del contenido textual -->
-  </article> <!-- Fin del artículo del servicio 7 -->
+          <article class="product-card product-green">
+            <div class="product-image">
+              <img src="rubro-cocina.PNG" alt="Lavatrastes olor a limón" loading="lazy">
+            </div>
+            <div class="product-body">
+              <p class="product-category">Limpieza del hogar</p>
+              <h3>Lavatrastes olor a limón</h3>
+              <a href="https://wa.me/525543674491?text=Hola%20GOC%2C%20me%20interesa%20el%20Lavatrastes%20olor%20a%20lim%C3%B3n." target="_blank" rel="noopener noreferrer">Preguntar <span>→</span></a>
+            </div>
+          </article>
 
-  <!-- Inicio de la Sección 8-->
-  <article class="service"> <!-- Artículo que representa el servicio 8 -->
-    <img class="service-img" src="soluciones-personalizadas.PNG" alt="Imagen de servicio 8"> <!-- Imagen representativa del servicio 7 -->
-    <div class="service-content"> <!-- Contenedor para el contenido textual del servicio 7 -->
-      <h2>Soluciones Personalizadas</h2> <!-- Título del servicio 9 -->
-      <p>¿Necesitas algo específico? Adaptamos nuestras fórmulas a tus 
-        necesidades, creando soluciones de limpieza personalizadas para 
-        cualquier industria o negocio.</p> <!-- Descripción del servicio 7 -->
-    </div> <!-- Fin del contenedor del contenido textual -->
-  </article> <!-- Fin del artículo del servicio 7 -->
-</section> <!-- Fin del contenedor principal de servicios -->
+          <article class="product-card product-purple">
+            <div class="product-image">
+              <img src="rubro-hogar.PNG" alt="Limpiador multiusos olor a lavanda" loading="lazy">
+            </div>
+            <div class="product-body">
+              <p class="product-category">Limpieza del hogar</p>
+              <h3>Limpiador multiusos olor a lavanda</h3>
+              <a href="https://wa.me/525543674491?text=Hola%20GOC%2C%20me%20interesa%20el%20Limpiador%20multiusos%20olor%20a%20lavanda." target="_blank" rel="noopener noreferrer">Preguntar <span>→</span></a>
+            </div>
+          </article>
 
-    <!-- Anuncio flotante 
-    <div id="contacto-flotante">
-        <p>📞 <strong>Contacto:</strong> 55 4367 4491</p> !-- Número de contacto 1 --
-        <p>📞 <strong>Contacto:</strong> 55 8195 2133</p> !-- Número de contacto 2 --
-        <p>📧 <strong>Email:</strong> aontreraso2701@gmail.com</p> !-- Correo de contacto --
-    </div>  -->
+          <article class="product-card product-auto">
+            <div class="product-image product-image-dark">
+              <img src="rubro-automotriz.PNG" alt="Shampoo para autos" loading="lazy">
+            </div>
+            <div class="product-body">
+              <p class="product-category">Cuidado automotriz</p>
+              <h3>Shampoo para autos</h3>
+              <a href="https://wa.me/525543674491?text=Hola%20GOC%2C%20me%20interesa%20el%20Shampoo%20para%20autos." target="_blank" rel="noopener noreferrer">Preguntar <span>→</span></a>
+            </div>
+          </article>
+        </div>
 
-    <!-- Footer con información de contacto -->
-    <div class="footer-contacto">
-        <p><strong>Dirección: Arrayanes, Los Heroes Coacalco, Estado de México. </strong> </p> <!-- Dirección de la empresa -->
-        <p><strong>Teléfonos:</strong> </p> <!-- Teléfono de contacto -->
-        <p><strong> </strong> 55 8195 2133</p> <!-- Teléfono de contacto principal -->
-        <p><strong> </strong> 55 4367 4491</p> <!-- Teléfono de contacto -->
-        <p><strong> </strong> 55 3205 4736</p> <!-- Teléfono de contacto -->
-        <p><strong>Email:</strong> </p> <!-- Correo electrónico -->
+        <div class="center-action">
+          <a class="btn btn-primary" href="catalogo.html">Ver todos los productos <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="business-section" id="soluciones">
+      <div class="business-copy">
+        <p class="eyebrow">Para tu negocio</p>
+        <h2>Soluciones para<br>tu negocio</h2>
+        <span class="gold-rule left" aria-hidden="true"></span>
+        <p>Productos de limpieza para diferentes espacios, necesidades y operaciones.</p>
+        <a class="btn btn-primary" href="contacto.html">Conocer soluciones <span>→</span></a>
+      </div>
+      <div class="business-visual">
+        <img src="rubro-hosteleria.PNG" alt="Soluciones de limpieza GOC para negocios" loading="lazy">
+      </div>
+    </section>
+
+    <section class="custom-section">
+      <div class="container custom-inner">
+        <div class="custom-mark" aria-hidden="true">GOC</div>
+        <div>
+          <p class="eyebrow">Atención cercana</p>
+          <h2>¿Necesitas algo diferente?</h2>
+          <p>Cuéntanos qué estás buscando.</p>
+        </div>
+        <a class="btn btn-whatsapp" href="https://wa.me/525543674491?text=Hola%20GOC%2C%20estoy%20buscando%20una%20soluci%C3%B3n%20de%20limpieza%20diferente.%20%C2%BFMe%20pueden%20orientar%3F" target="_blank" rel="noopener noreferrer">
+          <span class="wa-mark" aria-hidden="true">◔</span> Cuéntanos qué necesitas
+        </a>
+      </div>
+    </section>
+
+    <section class="catalog-section">
+      <div class="container catalog-inner">
+        <div class="catalog-cover" aria-hidden="true">
+          <div class="catalog-logo">GOC</div>
+          <span>CATÁLOGO DE PRODUCTOS</span>
+        </div>
+        <div class="catalog-copy">
+          <p class="eyebrow">Catálogo GOC</p>
+          <h2>Conoce nuestro catálogo</h2>
+          <p>Explora nuestra línea de productos y encuentra la solución que necesitas.</p>
+          <div class="catalog-actions">
+            <a class="btn btn-primary" href="catalogo2026-01.pdf" target="_blank" rel="noopener noreferrer">Ver catálogo <span>→</span></a>
+            <a class="btn btn-outline" href="catalogo2026-01.pdf" download>Descargar catálogo <span>↓</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="nosotros">
+      <div class="container final-cta-inner">
+        <div>
+          <p class="eyebrow">GOC</p>
+          <h2>¿Qué estás buscando?</h2>
+          <p>Hablemos y encontremos una solución de limpieza para ti.</p>
+        </div>
+        <a class="btn btn-whatsapp" href="https://wa.me/525543674491?text=Hola%20GOC%2C%20quiero%20conocer%20sus%20productos." target="_blank" rel="noopener noreferrer">
+          <span class="wa-mark" aria-hidden="true">◔</span> Hablar por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand footer-logo"><img src="https://raw.githubusercontent.com/Allo11727/Allo11727.github.io/90e496e15e67c49d7fe46406ff91f0fffbac0b0a/logo.png" alt="GOC"></a>
+        <p>Productos de limpieza para tu hogar, negocio y automóvil.</p>
+        <a href="https://wa.me/525543674491" target="_blank" rel="noopener noreferrer">WhatsApp →</a>
+      </div>
+      <div>
+        <h3>Productos</h3>
+        <a href="#productos">Cuidado de la ropa</a>
+        <a href="#productos">Limpieza del hogar</a>
+        <a href="#productos">Higiene</a>
+        <a href="#soluciones">Limpieza profesional</a>
+        <a href="#productos">Cuidado automotriz</a>
+      </div>
+      <div>
+        <h3>Soluciones</h3>
+        <a href="#soluciones">Para tu negocio</a>
+        <a href="#soluciones">A tu medida</a>
+      </div>
+      <div>
+        <h3>GOC</h3>
+        <a href="#nosotros">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="catalogo2026-01.pdf" target="_blank" rel="noopener noreferrer">Catálogo</a>
+      </div>
+      <div>
+        <h3>Síguenos</h3>
+        <div class="socials">
+          <a href="https://www.facebook.com/share/17HWGfgv7M/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+        </div>
+      </div>
     </div>
-      <!-- <p>&copy; 2025 Jabbon. Todos los derechos reservados.</p>  Derechos de autor -->
+    <div class="container footer-bottom">
+      <span>© 2026 GOC. Todos los derechos reservados.</span>
+      <span>todolimpio.org</span>
+    </div>
+  </footer>
 
-<!-- flotante whatsapp -->    
-    <a href="https://wa.me/525581952133" class="whatsapp-float" target="_blank">
-      <img src="whats-icon.webp" alt="WhatsApp">
-    </a>
-
-
-    
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
