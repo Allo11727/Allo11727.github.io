@@ -35,7 +35,7 @@ function renderProductos(filtro="todos"){
       <div class="catalog-product-content">
         <p class="product-category">${p.label}</p>
         <h2>${p.nombre}</h2>
-        <div class="presentation-list"><span>${p.label}</span></div>
+        <div class="presentation-list">${p.presentaciones.map(x=>`<span>${x}</span>`).join("")}</div>
         ${p.nota?`<p class="product-note">${p.nota}</p>`:""}
         <a class="product-question" href="${whatsappLink(p.nombre)}" target="_blank" rel="noopener noreferrer">Preguntar por este producto <span>→</span></a>
       </div>
