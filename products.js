@@ -3,9 +3,8 @@ const productos=[
 {name:"Jabón líquido para ropa de color",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"rubro-lavanderia.PNG",acento:"blue"},
 {name:"Jabón líquido para ropa blanca",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"rubro-lavanderia.PNG",acento:"blue"},
 {name:"Suavizante para telas",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"rubro-lavanderia.PNG",acento:"blue"},
-{name:"Jabón líquido negro",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"rubro-lavanderia.PNG",acento:"black",nota:"Opción disponible por ahora."},
 {name:"Jabón para manos humectante",categoria:"higiene",label:"Higiene",presentaciones:["1 L","5 L"],imagen:"rubro-hogar.PNG",acento:"purple"},
-{name:"Lavatrastes olor a limón",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L"],imagen:"rubro-cocina.PNG",acento:"green"},
+{name:"Lavatrastes olor a limón",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"rubro-cocina.PNG",acento:"green"},
 {name:"Limpiador multiusos olor a lavanda",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"rubro-hogar.PNG",acento:"purple"},
 {name:"Limpiador multiusos con aceite de pino",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"rubro-hogar.PNG",acento:"green"},
 {name:"Cloro en gel",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"rubro-hogar.PNG",acento:"green"},
@@ -15,6 +14,7 @@ const productos=[
 {name:"Shampoo para autos con cera",categoria:"automotriz",label:"Cuidado automotriz",presentaciones:["1 L","5 L"],imagen:"rubro-automotriz.PNG",acento:"auto"},
 {name:"Hidratador para tableros y puertas",categoria:"automotriz",label:"Cuidado automotriz",presentaciones:["1 L","5 L"],imagen:"rubro-automotriz.PNG",acento:"auto"},
 {name:"Abrillantador de llantas",categoria:"automotriz",label:"Cuidado automotriz",presentaciones:["1 L","5 L"],imagen:"rubro-automotriz.PNG",acento:"auto"},
+{name:"Jabón líquido negro",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"rubro-lavanderia.PNG",acento:"black",nota:"Opción disponible por ahora."}
 ];
 
 function whatsappLink(nombre){
