@@ -24,6 +24,7 @@ const categoryIcons={
   'category-hygiene':'<svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 55S14 43 14 26c0-7 5-12 11-12 4 0 6 2 7 5 1-3 3-5 7-5 6 0 11 5 11 12 0 17-18 29-18 29z"/><path d="M20 35c5 1 8 4 10 9M39 27c-4 2-6 5-7 9"/></svg>',
   'category-professional':'<svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 55V24l23-13 23 13v31H9z"/><path d="M18 55V35h28v20"/><path d="M25 22h.01M39 22h.01M25 29h.01M39 29h.01"/></svg>',
   'category-automotive':'<svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 43l4-15 6-10h18l6 10 4 15v8H13z"/><path d="M18 28h28M13 43h38"/><circle cx="21" cy="49" r="2"/><circle cx="43" cy="49" r="2"/></svg>'
+
 };
 
 document.querySelectorAll('.category-icon').forEach(icon=>{
@@ -35,5 +36,27 @@ document.querySelectorAll('.category-icon').forEach(icon=>{
     icon.style.placeItems='center';
     icon.style.width='44px';
     icon.style.height='44px';
+  }
+});
+
+/* Iconos maestros proporcionados en SVG independiente para edición directa en Inkscape. */
+const externalCategoryIcons={
+  'category-professional':'icons/profesional.svg',
+  'category-automotive':'icons/automotriz.svg'
+};
+
+document.querySelectorAll('.category-icon').forEach(icon=>{
+  const card=icon.closest('.category-card');
+  const key=card&&Object.keys(externalCategoryIcons).find(name=>card.classList.contains(name));
+  if(key){
+    const img=document.createElement('img');
+    img.src=externalCategoryIcons[key];
+    img.alt='';
+    img.width=44;
+    img.height=44;
+    img.setAttribute('aria-hidden','true');
+    img.style.display='block';
+    icon.innerHTML='';
+    icon.appendChild(img);
   }
 });
