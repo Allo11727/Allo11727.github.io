@@ -41,6 +41,9 @@ document.querySelectorAll('.category-icon').forEach(icon=>{
 
 /* Iconos maestros proporcionados en SVG independiente para edición directa en Inkscape. */
 const externalCategoryIcons={
+  'category-clothing':'icons/playera.svg',
+  'category-home':'icons/hogar.svg',
+  'category-hygiene':'icons/higiene.svg',
   'category-professional':'icons/profesional.svg',
   'category-automotive':'icons/automotriz.svg'
 };
