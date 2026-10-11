@@ -27,21 +27,21 @@ function renderProductos(filtro="todos"){
   if(!grid)return;
   const lista=filtro==="todos"?productos:productos.filter(p=>p.categoria===filtro);
   document.querySelector("#product-count").textContent=`${lista.length} ${lista.length===1?"producto":"productos"}`;
-  grid.innerHTML=lista.map((p,i)=>`
+  grid.innerHTML=lista.map((p,i)=>{ const nombre=typeof p.nombre==="string"&&p.nombre.trim()?p.nombre.trim():"Producto GOC"; const categoria=typeof p.label==="string"?p.label:"Productos GOC"; return `
     <article class="catalog-product-card product-accent-${p.acento}">
       <div class="catalog-product-media">
-        <img src="${p.imagen}" alt="${p.nombre}" loading="lazy">
+        <img src="${p.imagen}" alt="${nombre}" loading="lazy">
         <span class="product-index">${String(productos.indexOf(p)+1).padStart(2,"0")}</span>
       </div>
       <div class="catalog-product-content">
-        <p class="product-category">${p.label}</p>
-        <h2>${p.nombre}</h2>
+        <p class="product-category">${categoria}</p>
+        <h2>${nombre}</h2>
         <div class="presentation-list">${(p.presentaciones||[]).map(x=>`<span>${x}</span>`).join("")}</div>
         ${p.nota?`<p class="product-note">${p.nota}</p>`:""}
-        <a class="product-question" href="${whatsappLink(p.nombre)}" target="_blank" rel="noopener noreferrer">Preguntar por este producto <span>→</span></a>
+        <a class="product-question" href="${whatsappLink(nombre)}" target="_blank" rel="noopener noreferrer">Preguntar por este producto <span>→</span></a>
       </div>
     </article>
-  `).join("");
+  `; }).join("");
 }
 document.addEventListener("DOMContentLoaded",()=>{
   renderProductos();
