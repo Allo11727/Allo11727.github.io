@@ -1,8 +1,8 @@
 const GOC_WHATSAPP="525543674491";
 const productos=[
 {name:"Detergente líquido para ropa de color",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"images/goc-detergente-ropa-color-600.webp",acento:"blue"},
-{name:"Detergente líquido para ropa blanca",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"rubro-lavanderia.PNG",acento:"blue"},
-{name:"Suavizante para telas",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"rubro-lavanderia.PNG",acento:"blue"},
+{name:"Detergente líquido para ropa blanca",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"images/goc-detergente-ropa-blanca-600.webp",acento:"blue"},
+{name:"Suavizante para telas",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"images/goc-suavizante-telas-600.webp",acento:"blue"},
 {name:"Detergente líquido negro",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"rubro-lavanderia.PNG",acento:"black",nota:"Opción disponible por ahora."},
 {name:"Detergente para manos",categoria:"higiene",label:"Higiene",presentaciones:["1 L","5 L"],imagen:"rubro-hogar.PNG",acento:"purple"},
 {name:"Lavatrastes olor a limón",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L"],imagen:"rubro-cocina.PNG",acento:"green"},
