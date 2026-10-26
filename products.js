@@ -4,7 +4,7 @@ const productos=[
 {name:"Detergente líquido para ropa blanca",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"images/goc-detergente-ropa-blanca-600.webp",acento:"blue"},
 {name:"Suavizante para telas",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"images/goc-suavizante-telas-600.webp",acento:"blue"},
 {name:"Detergente líquido negro",categoria:"ropa",label:"Cuidado de la ropa",presentaciones:["1 L","5 L"],imagen:"images/goc-detergente-liquido-negro-600.webp",acento:"black",nota:"Opción disponible por ahora."},
-{name:"Detergente para manos",categoria:"higiene",label:"Higiene",presentaciones:["1 L","5 L"],imagen:"rubro-hogar.PNG",acento:"purple"},
+{name:"Detergente para manos",categoria:"higiene",label:"Higiene",presentaciones:["1 L","5 L"],imagen:"images/goc-detergente-manos-600.webp",acento:"purple"},
 {name:"Lavatrastes olor a limón",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L"],imagen:"rubro-cocina.PNG",acento:"green"},
 {name:"Limpiador multiusos olor a lavanda",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"rubro-hogar.PNG",acento:"purple"},
 {name:"Limpiador multiusos con aceite de pino",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"rubro-hogar.PNG",acento:"green"},
