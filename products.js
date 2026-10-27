@@ -8,7 +8,7 @@ const productos=[
 {name:"Lavatrastes olor a limón",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L"],imagen:"images/goc-lavatrastes-limon-600.webp",acento:"green"},
 {name:"Limpiador multiusos olor a lavanda",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"images/goc-multiusos-lavanda-600.webp",acento:"purple"},
 {name:"Limpiador multiusos con aceite de pino",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"images/goc-multiusos-pino-600.webp",acento:"green"},
-{name:"Cloro en gel",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"rubro-hogar.PNG",acento:"green"},
+{name:"Cloro en gel",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"images/goc-cloro-gel-600.webp",acento:"green"},
 {name:"Limpiapisos Ocean",categoria:"hogar",label:"Limpieza del hogar",presentaciones:[],imagen:"rubro-hogar.PNG",acento:"blue"},
 {name:"Desengrasante multiusos",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"rubro-cocina.PNG",acento:"green"},
 {name:"Desengrasante industrial",categoria:"profesional",label:"Limpieza profesional",presentaciones:["1 L","5 L"],imagen:"rubro-hosteleria.PNG",acento:"professional"},
