@@ -10,7 +10,7 @@ const productos=[
 {name:"Limpiador multiusos con aceite de pino",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"images/goc-multiusos-pino-600.webp",acento:"green"},
 {name:"Cloro en gel",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"images/goc-cloro-gel-600.webp",acento:"green"},
 {name:"Limpiapisos Ocean",categoria:"hogar",label:"Limpieza del hogar",presentaciones:[],imagen:"images/goc-limpiapisos-ocean-600.webp",acento:"blue"},
-{name:"Desengrasante multiusos",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"rubro-cocina.PNG",acento:"green"},
+{name:"Desengrasante multiusos",categoria:"hogar",label:"Limpieza del hogar",presentaciones:["1 L","5 L"],imagen:"images/goc-desengrasante-multiusos-600.webp",acento:"green"},
 {name:"Desengrasante industrial",categoria:"profesional",label:"Limpieza profesional",presentaciones:["1 L","5 L"],imagen:"rubro-hosteleria.PNG",acento:"professional"},
 {name:"Shampoo para autos",categoria:"automotriz",label:"Cuidado automotriz",presentaciones:["1 L","5 L"],imagen:"rubro-automotriz.PNG",acento:"auto"},
 {name:"Shampoo para autos con cera",categoria:"automotriz",label:"Cuidado automotriz",presentaciones:["1 L","5 L"],imagen:"rubro-automotriz.PNG",acento:"auto"},
