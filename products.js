@@ -14,7 +14,7 @@ const productos=[
 {name:"Desengrasante industrial",categoria:"profesional",label:"Limpieza profesional",presentaciones:["1 L","5 L"],imagen:"images/goc-desengrasante-industrial-600.webp",acento:"professional"},
 {name:"Shampoo para autos",categoria:"automotriz",label:"Cuidado automotriz",presentaciones:["1 L","5 L"],imagen:"images/goc-shampoo-autos-600.webp",acento:"auto"},
 {name:"Shampoo para autos con cera",categoria:"automotriz",label:"Cuidado automotriz",presentaciones:["1 L","5 L"],imagen:"images/goc-shampoo-autos-cera-600.webp",acento:"auto"},
-{name:"Hidratador para tableros y puertas",categoria:"automotriz",label:"Cuidado automotriz",presentaciones:["1 L","5 L"],imagen:"rubro-automotriz.PNG",acento:"auto"},
+{name:"Hidratador para tableros y puertas",categoria:"automotriz",label:"Cuidado automotriz",presentaciones:["1 L","5 L"],imagen:"images/goc-hidratador-tableros-puertas-600.webp",acento:"auto"},
 {name:"Abrillantador de llantas",categoria:"automotriz",label:"Cuidado automotriz",presentaciones:["1 L","5 L"],imagen:"rubro-automotriz.PNG",acento:"auto"},
 ];
 
